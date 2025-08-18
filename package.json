@@ -1,6 +1,6 @@
 {
   "name": "@mcpc-tech/ripgrep-napi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Template project for writing node package with napi-rs",
   "main": "index.js",
   "types": "index.d.ts",
@@ -21,7 +21,9 @@
   "files": [
     "index.d.ts",
     "index.js",
-    "browser.js"
+    "browser.js",
+    "*.node",
+    "*.wasm"
   ],
   "napi": {
     "binaryName": "ripgrep-napi",
@@ -114,21 +116,5 @@
     "singleQuote": true,
     "arrowParens": "always"
   },
-  "packageManager": "pnpm@10.14.0",
-  "optionalDependencies": {
-    "@mcpc-tech/ripgrep-napi-darwin-x64": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-darwin-arm64": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-linux-x64-gnu": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-win32-x64-msvc": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-linux-x64-musl": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-linux-arm64-gnu": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-win32-ia32-msvc": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-linux-arm-gnueabihf": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-android-arm64": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-freebsd-x64": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-linux-arm64-musl": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-win32-arm64-msvc": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-android-arm-eabi": "0.0.1",
-    "@mcpc-tech/ripgrep-napi-wasm32-wasi": "0.0.1"
-  }
+  "packageManager": "pnpm@10.14.0"
 }
