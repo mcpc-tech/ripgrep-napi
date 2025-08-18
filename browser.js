@@ -1,1 +1,1 @@
-export * from '@napi-rs/package-template-pnpm-wasm32-wasi'
+export * from '@mcpc-tech/ripgrep-napi-wasm32-wasi'
