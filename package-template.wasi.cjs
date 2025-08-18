@@ -108,4 +108,7 @@ const { instance: __napiInstance, module: __wasiModule, napiModule: __napiModule
   },
 })
 module.exports = __napiModule.exports
-module.exports.plus100 = __napiModule.exports.plus100
+module.exports.getSupportedFileTypes = __napiModule.exports.getSupportedFileTypes
+module.exports.search = __napiModule.exports.search
+module.exports.searchFile = __napiModule.exports.searchFile
+module.exports.validatePattern = __napiModule.exports.validatePattern

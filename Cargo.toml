@@ -1,8 +1,11 @@
 [package]
-authors = ["LongYinan <lynweklm@gmail.com>"]
+authors = ["yaonyan"]
 edition = "2021"
-name = "napi-package-template"
+name = "ripgrep-napi"
 version = "0.1.0"
+description = "NAPI bindings for ripgrep - fast line-oriented search"
+license = "MIT"
+repository = "https://github.com/yaonyan/ripgrep-napi"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -12,6 +15,16 @@ crate-type = ["cdylib"]
 [dependencies]
 napi = "3.0.0"
 napi-derive = "3.0.0"
+
+# Core grep functionality
+grep = "0.3"
+grep-searcher = "0.1"
+
+# File system traversal
+ignore = "0.4"
+
+# Serialization for NAPI objects
+serde = { version = "1.0", features = ["derive"] }
 
 [build-dependencies]
 napi-build = "2"

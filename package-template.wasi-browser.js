@@ -56,4 +56,7 @@ const {
   },
 })
 export default __napiModule.exports
-export const plus100 = __napiModule.exports.plus100
+export const getSupportedFileTypes = __napiModule.exports.getSupportedFileTypes
+export const search = __napiModule.exports.search
+export const searchFile = __napiModule.exports.searchFile
+export const validatePattern = __napiModule.exports.validatePattern
