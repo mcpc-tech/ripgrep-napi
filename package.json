@@ -1,22 +1,27 @@
 {
   "name": "@mcpc-tech/ripgrep-napi",
-  "version": "0.0.3",
-  "description": "Template project for writing node package with napi-rs",
+  "version": "0.0.4",
+  "description": "Fast text search library powered by Rust ripgrep, providing Node.js bindings via NAPI-RS",
   "main": "index.js",
   "types": "index.d.ts",
   "browser": "browser.js",
   "repository": {
-    "url": "git+ssh://git@github.com/napi-rs/ripgrep-napi-pnpm.git",
+    "url": "git+https://github.com/yaonyan/ripgrep-napi.git",
     "type": "git"
   },
   "license": "MIT",
   "keywords": [
+    "ripgrep",
+    "search",
+    "grep",
+    "text-search",
+    "file-search",
+    "regex",
+    "rust",
     "napi-rs",
     "NAPI",
     "N-API",
-    "Rust",
-    "node-addon",
-    "node-addon-api"
+    "node-addon"
   ],
   "files": [
     "index.d.ts",
