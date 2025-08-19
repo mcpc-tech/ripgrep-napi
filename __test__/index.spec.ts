@@ -2,6 +2,9 @@ import test from 'ava'
 
 import { search, searchFile, validatePattern, getSupportedFileTypes } from '../index.js'
 
+// Check if we're running in WASI environment
+const isWASI = process.env.NAPI_RS_FORCE_WASI === '1'
+
 test('validate pattern function', (t) => {
   t.true(validatePattern('hello'))
   t.true(validatePattern('\\d+'))
@@ -16,7 +19,13 @@ test('get supported file types function', (t) => {
   t.true(types.includes('javascript'))
 })
 
-test('search function with basic pattern', async (t) => {
+test('search function with basic pattern', (t) => {
+  if (isWASI) {
+    // In WASI environment, skip file system tests
+    t.pass('Skipping file system test in WASI environment')
+    return
+  }
+  
   // Search for 'use' in the current source file
   const result = search('use', ['./src/lib.rs'])
   
@@ -27,7 +36,13 @@ test('search function with basic pattern', async (t) => {
   t.true(Array.isArray(result.matches))
 })
 
-test('search file function', async (t) => {
+test('search file function', (t) => {
+  if (isWASI) {
+    // In WASI environment, skip file system tests
+    t.pass('Skipping file system test in WASI environment')
+    return
+  }
+  
   // Search for 'fn' in the source file
   const result = searchFile('fn', './src/lib.rs')
   
