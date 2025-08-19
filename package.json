@@ -6,7 +6,7 @@
   "types": "index.d.ts",
   "browser": "browser.js",
   "repository": {
-    "url": "git+https://github.com/yaonyan/ripgrep-napi.git",
+    "url": "git+https://github.com/mcpc-tech/ripgrep-napi.git",
     "type": "git"
   },
   "license": "MIT",

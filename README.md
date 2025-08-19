@@ -1,20 +1,13 @@
-# `@napi-rs/ripgrep-napi`
+# `@mcpc-tech/ripgrep-napi`
 
-![https://github.com/napi-rs/ripgrep-napi/actions](https://github.com/napi-rs/ripgrep-napi/workflows/CI/badge.svg)
+![https://github.com/mcpc-tech/ripgrep-napi/actions](https://github.com/mcpc-tech/ripgrep-napi/workflows/CI/badge.svg)
 
-> Template project for writing node packages with napi-rs.
+> Fast text search library powered by Rust ripgrep, providing Node.js bindings via NAPI-RS
 
-# Usage
-
-1. Click **Use this template**.
-2. **Clone** your project.
-3. Run `pnpm install` to install dependencies.
-4. Run `npx napi rename -n [name]` command under the project folder to rename your package.
-
-## Install this test package
+## Install this package
 
 ```
-pnpm add @napi-rs/ripgrep-napi
+pnpm add @mcpc-tech/ripgrep-napi
 ```
 
 ## Usage
@@ -41,7 +34,7 @@ The other problem is how to deliver prebuild `binary` to users. Downloading it i
 
 In this package, we choose a better way to solve this problem. We release different `npm packages` for different platforms. And add it to `optionalDependencies` before releasing the `Major` package to npm.
 
-`NPM` will choose which native package should download from `registry` automatically. You can see [npm](./npm) dir for details. And you can also run `pnpm add @napi-rs/ripgrep-napi` to see how it works.
+`NPM` will choose which native package should download from `registry` automatically. You can see [npm](./npm) dir for details. And you can also run `pnpm add @mcpc-tech/ripgrep-napi` to see how it works.
 
 ## Develop requirements
 
