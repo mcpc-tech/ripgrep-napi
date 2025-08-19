@@ -1,12 +1,12 @@
 {
   "name": "@mcpc-tech/ripgrep-napi",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Template project for writing node package with napi-rs",
   "main": "index.js",
   "types": "index.d.ts",
   "browser": "browser.js",
   "repository": {
-    "url": "git+ssh://git@github.com/napi-rs/package-template-pnpm.git",
+    "url": "git+ssh://git@github.com/napi-rs/ripgrep-napi-pnpm.git",
     "type": "git"
   },
   "license": "MIT",
@@ -21,9 +21,7 @@
   "files": [
     "index.d.ts",
     "index.js",
-    "browser.js",
-    "*.node",
-    "*.wasm"
+    "browser.js"
   ],
   "napi": {
     "binaryName": "ripgrep-napi",
